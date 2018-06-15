@@ -1,0 +1,220 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  position: relative;
+}
+body{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(https://img00.deviantart.net/00cf/i/2016/330/d/b/backgrounds_ending_dragonball_z__facudibuja_by_facudibuja-dapnye7.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+input{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 100;
+  margin: 10px;
+}
+input[name="email"]{
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 26px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0px;
+}
+input[type="submit"]{
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+::placeholder{
+  color: #fff;
+}
+.search{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  input{
+    display: none;
+  }
+}
+.start{
+  display: none;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #ffeac3;
+  text-shadow: 1px 1px 2px #333;
+  margin: 0;
+}
+.first{
+  min-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.step_1{
+  //position: absolute;
+  opacity: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+.wrap{
+  display: none;
+  letter-spacing: 1px;
+  background: #44a2bb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 480px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  .title{
+    text-align: center;
+  }
+  h3{
+    font-size: 26px;
+  }
+  h3,h4{
+    letter-spacing: 2px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+  }
+  p{
+    margin: 5px 0;
+  }
+  hr{
+    margin: 20px 0;
+    border: 0.5px solid #fff;
+    height: 0;
+  }
+  #congra{
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #333;
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+  a{
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    background: #ff6a00;
+    letter-spacing: 2px;
+    border-radius: 3px;
+  }
+  .back{
+    color: #44a2bb;
+    background: #fff;
+  }
+}
+
+// .pin{
+//   position: absolute;
+//   bottom: 40px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 80px;
+//   animation: move 2s infinite ;
+//   img{
+//     width: 100%;
+//   }
+// }
+.process{
+  bottom: 100px;
+  width: 100%;
+  height: 100px;
+  height: 150px;
+  bottom: 300px;
+  display: none;
+  opacity: 0;
+  ul{
+    height: 150px;
+    //background: #ec6d12;
+    //border: 2px solid #ffeac3;
+    //height: 6px;
+    //border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    li{
+      display: inline-block;
+      text-align: center;
+      width: 120px;
+      cursor: pointer;
+      margin: 0px 20px;
+      color: #fff;
+      position: relative;
+      img{
+        display: block;
+        margin: 20px 0;
+        width: 100%;     
+        transition: .3s;
+      }
+      &:hover>img{
+        transform: scale(1.3,1.3)
+      }
+    }
+    li:last-child{
+      img{
+        width: 100px;
+      }
+    }
+    .done{
+      &:after{
+        background: #ff6a00;
+        border: 2px solid #fff;
+      }
+    }
+  }
+}
+
+.copyright{
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  width: 500px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+@keyframes move {
+  0%{ bottom: 40px;}
+  50%{bottom: 60px;}
+  100%{bottom: 40px;}
+}
